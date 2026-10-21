@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -)",
+      "Bash(node tools/make-icons.mjs)",
+      "Bash(node build.mjs)",
+      "Bash(node tests/check.mjs)",
+      "Bash(python -I tests/validate.py)"
+    ]
+  }
+}

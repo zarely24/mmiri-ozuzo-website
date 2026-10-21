@@ -1,0 +1,270 @@
+{
+  "_comment": "Single source of truth for business facts and the booking destination. Edit here; never in the templates. Run `node build.mjs` after changes. Items marked CONFIRM in docs/LAUNCH-CHECKLIST.md need owner confirmation before launch.",
+  "baseUrl": "https://www.mmiriozuzo.gr",
+  "_baseUrl_note": "UNCONFIRMED production domain (inherited from the prototype; no DNS record exists as of 2026-10-21). Change to the real domain before deploying. Must be https:// with no trailing slash.",
+  "brand": {
+    "name": "Mmiri Ozuzo",
+    "tagline_el": "Barber Salon",
+    "tagline_en": "Barber Salon",
+    "founder": {
+      "el": "Βασίλης Μοναστηρλής",
+      "en": "Vasilis Monastirlis"
+    }
+  },
+  "booking": {
+    "url": "https://www.ebarber.gr/en/barbershops/mmiri-ozuzo",
+    "provider": "ebarber.gr",
+    "providerPrivacy": "https://www.ebarber.gr/en/privacy",
+    "providerPrivacy_el": "https://www.ebarber.gr/privacy"
+  },
+  "contact": {
+    "phoneE164": "+302103311323",
+    "phoneDisplay": "+30 210 331 1323",
+    "email": "",
+    "_email_note": "CONFIRM — no public email is known. Leave empty to omit; the privacy page then points to phone and post."
+  },
+  "address": {
+    "street_el": "Κολοκοτρώνη 10",
+    "street_en": "Kolokotroni 10",
+    "locality_el": "Αθήνα",
+    "locality_en": "Athens",
+    "postalCode": "105 61",
+    "countryCode": "GR",
+    "country_el": "Ελλάδα",
+    "country_en": "Greece",
+    "geo": {
+      "lat": 37.977639,
+      "lon": 23.731471,
+      "_source": "OpenStreetMap Nominatim, building outline for Κολοκοτρώνη 10 (way 762742110), queried 2026-10-21"
+    }
+  },
+  "hours": {
+    "_source": "ebarber.gr listing, read 2026-10-21. CONFIRM with owner before launch.",
+    "timezone": "Europe/Athens",
+    "week": {
+      "mon": null,
+      "tue": [
+        "11:00",
+        "19:00"
+      ],
+      "wed": [
+        "10:00",
+        "16:30"
+      ],
+      "thu": [
+        "11:00",
+        "19:00"
+      ],
+      "fri": [
+        "11:00",
+        "19:00"
+      ],
+      "sat": [
+        "10:30",
+        "17:00"
+      ],
+      "sun": null
+    }
+  },
+  "services": {
+    "_source": "ebarber.gr listing, read 2026-10-21. Prices in EUR. CONFIRM with owner; set showPrices to false to publish the list without prices.",
+    "showPrices": true,
+    "asOf": "2026-10-21",
+    "groups": [
+      {
+        "id": "haircuts",
+        "items": [
+          {
+            "key": "cut_classic",
+            "price": 20,
+            "minutes": 45
+          },
+          {
+            "key": "cut_fade",
+            "price": 18,
+            "minutes": 25
+          },
+          {
+            "key": "cut_nofade",
+            "price": 16,
+            "minutes": 20
+          },
+          {
+            "key": "cut_clipper_guard",
+            "price": 15,
+            "minutes": 30
+          },
+          {
+            "key": "cut_cleanup",
+            "price": 10,
+            "minutes": 15
+          },
+          {
+            "key": "cut_kids",
+            "price": 14,
+            "minutes": 30
+          }
+        ]
+      },
+      {
+        "id": "beard",
+        "items": [
+          {
+            "key": "beard_care",
+            "price": 12,
+            "minutes": 15
+          },
+          {
+            "key": "beard_clipper",
+            "price": 8,
+            "minutes": 15
+          },
+          {
+            "key": "moustache",
+            "price": 3,
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "id": "shaves",
+        "items": [
+          {
+            "key": "shave_traditional",
+            "price": 16,
+            "minutes": 40
+          },
+          {
+            "key": "shave_head",
+            "price": 18,
+            "minutes": 30
+          },
+          {
+            "key": "cut_and_beard",
+            "price": 32,
+            "minutes": 35
+          }
+        ]
+      },
+      {
+        "id": "extras",
+        "items": [
+          {
+            "key": "shampoo",
+            "price": 2,
+            "minutes": 5
+          },
+          {
+            "key": "wash_style",
+            "price": 7,
+            "minutes": 10
+          }
+        ]
+      }
+    ],
+    "holidaySurcharge": 3,
+    "_surcharge_note": "ebarber lists +3 EUR per service on Christmas/Easter/14 August. Set to 0 to hide the note. CONFIRM."
+  },
+  "press": [
+    {
+      "id": "iefimerida-2019",
+      "outlet": "iefimerida.gr",
+      "date": "2019-01-26",
+      "author": "Άγγελος Σκορδάς",
+      "title_el": "Mmiri Ozuzo: Το τελευταίο σπίτι του Κολοκοτρώνη στο κέντρο της Αθήνας μετατράπηκε σε χώρο…",
+      "url": "https://www.iefimerida.gr/news/474474/mmiri-ozuzo-teleytaio-spiti-toy-kolokotroni-sto-kentro-tis-athinas-metatrapike-se-horo",
+      "type": "article"
+    },
+    {
+      "id": "ert-2023",
+      "outlet": "ΕΡΤ",
+      "date": "2023-10-06",
+      "author": "",
+      "title_el": "Βασίλης Μοναστηρλής: Ο άνθρωπος που έφερε τα barber shops στην Ελλάδα",
+      "url": "https://www.youtube.com/watch?v=E0yS8RRv4dM",
+      "type": "video"
+    }
+  ],
+  "images": {
+    "_status": "PENDING OWNER CONFIRMATION. Every photograph comes from the shop's own ebarber listing (src/img/originals/SOURCES.txt). Before launch the owner must confirm in writing that the shop holds the rights, supply the originals, and confirm consent for the recognisable clients. See docs/ASSET-REGISTER.md.",
+    "hero": {
+      "id": "hero",
+      "alt_el": "Το εσωτερικό του Mmiri Ozuzo: ο μαύρος πάγκος, η καρέκλα κουρείου και το φωτεινό λογότυπο στον σοβατισμένο τοίχο",
+      "alt_en": "Inside Mmiri Ozuzo: the black counter, the barber chair and the neon logo on the plaster wall"
+    },
+    "heroMobile": {
+      "id": "hero-mobile",
+      "alt_el": "Κούρεμα fade δίπλα στο παράθυρο του κουρείου",
+      "alt_en": "A fade haircut by the barbershop window"
+    },
+    "band": {
+      "id": "band",
+      "alt_el": "Ξύρισμα με φαλτσέτα: το χέρι του κουρέα οδηγεί τη λεπίδα στον λαιμό του πελάτη",
+      "alt_en": "Straight-razor shave: the barber’s hand guiding the blade along the client’s neck"
+    },
+    "story": {
+      "id": "story",
+      "alt_el": "Η πρόσοψη του κουρείου στην Κολοκοτρώνη 10 με τις πινακίδες Shave και Haircut",
+      "alt_en": "The shopfront at Kolokotroni 10 with its Shave and Haircut signs",
+      "caption_el": "Κολοκοτρώνη 10, η είσοδος",
+      "caption_en": "Kolokotroni 10, the entrance"
+    },
+    "gallery": [
+      {
+        "id": "gallery-01",
+        "alt_el": "Δύο πελάτες στις καρέκλες του κουρείου κάτω από το νέον",
+        "alt_en": "Two clients in the barber chairs under the neon light",
+        "caption_el": "Οι καρέκλες",
+        "caption_en": "The chairs"
+      },
+      {
+        "id": "gallery-03",
+        "alt_el": "Πελάτης με ξανθό κούρεμα και σκαλισμένο γένι στην καρέκλα",
+        "alt_en": "A client with bleached hair and a shaped beard in the chair",
+        "caption_el": "Γένι & σχήμα",
+        "caption_en": "Beard & shape"
+      },
+      {
+        "id": "gallery-04",
+        "alt_el": "Fade με γραμμή στο πλάι και περιποιημένο γένι",
+        "alt_en": "A fade with a side part line and a groomed beard",
+        "caption_el": "Skin fade",
+        "caption_en": "Skin fade"
+      },
+      {
+        "id": "gallery-05",
+        "alt_el": "Κοντό κούρεμα με καθαρές γραμμές σε πελάτη με γυαλιά",
+        "alt_en": "A short cut with clean lines on a client wearing glasses",
+        "caption_el": "Καθαρές γραμμές",
+        "caption_en": "Clean lines"
+      },
+      {
+        "id": "gallery-06",
+        "alt_el": "Κλασικό κούρεμα με ψαλίδι σε πελάτη με γκρίζα μαλλιά",
+        "alt_en": "A classic scissor cut on a client with grey hair",
+        "caption_el": "Κλασικό με ψαλίδι",
+        "caption_en": "Classic scissor cut"
+      }
+    ],
+    "bandMobile": {
+      "id": "band-mobile",
+      "alt_el": "Ξύρισμα με φαλτσέτα: το χέρι του κουρέα οδηγεί τη λεπίδα στον λαιμό του πελάτη",
+      "alt_en": "Straight-razor shave: the barber’s hand guiding the blade along the client’s neck"
+    }
+  },
+  "social": {
+    "_note": "No verified social profiles. Do not add handles that have not been confirmed by the owner."
+  },
+  "legal": {
+    "controllerLegalName": "",
+    "_controllerLegalName_note": "CONFIRM — the legal entity or sole trader name operating the shop. Empty = pages show the trade name and flag the gap in the checklist; do not launch with it empty.",
+    "gemi": "",
+    "vat": "",
+    "hostingProvider": "",
+    "_hosting_note": "CONFIRM — name and location of the hosting provider and its log retention. Empty = the privacy page uses generic wording and the checklist flags it.",
+    "lastUpdated": "2026-10-21",
+    "logRetention_el": "",
+    "logRetention_en": "",
+    "_logRetention_note": "CONFIRM — e.g. el: \"τυπικά έως 30 ημέρες\", en: \"typically no longer than 30 days\". Empty = sentence ends at the provider policy."
+  }
+}

@@ -1,0 +1,11 @@
+# slot -> source (ebarber listing of the shop, read 2026-10-21). Rights: owner confirmation pending.
+hero.jpg <- https://www.ebarber.gr/photo/uploads/FeKJ6gwvtj2jUVPtJsxA842hyD9LIt566WQDDqjR_c.jpg  (1388x836; full frame)
+hero-mobile.jpg <- https://www.ebarber.gr/photo/uploads/eMzVqlSwCMR2tTHKbErfMzwUf7aitgHlHkFBBqkb.jpg  (1242x1552; full frame)
+band.jpg <- https://www.ebarber.gr/photo/uploads/3ns2wFPooalNuqiWNakJoNGUuymmx3xZhAEMkePX.jpg  (1080x1350; 16:9 crop from 24% down, used on screens wider than 720px)
+band-mobile.jpg <- https://www.ebarber.gr/photo/uploads/3ns2wFPooalNuqiWNakJoNGUuymmx3xZhAEMkePX.jpg  (1080x1350; full frame, used on phones)
+story.jpg <- https://www.ebarber.gr/photo/uploads/MXflL9m6UnoLHJi6CZQ6ruFpzb4yJaW9FP4GukW6.jpg  (1107x1107; full frame)
+gallery-01.jpg <- https://www.ebarber.gr/photo/uploads/ukjZdd1sQAYyCnrVZMOejf1b4BjZvqNnhDnIvGta.jpg  (1200x1200; full frame)
+gallery-03.jpg <- https://www.ebarber.gr/photo/uploads/OxSYuNXbBKxaSOI1N37kh4vBbpNezEqHL1oW2oEQ.jpg  (1080x1080; full frame)
+gallery-04.jpg <- https://www.ebarber.gr/photo/uploads/dR8clOvzmtjxD9J9KOIVD8SfkpujVgKi75agEyIH.jpg  (1080x1080; full frame)
+gallery-05.jpg <- https://www.ebarber.gr/photo/uploads/MmDFR4uwnDN9dVAPkdjvc4praYSFdiW50zIkMdw6.jpg  (1080x1080; full frame)
+gallery-06.jpg <- https://www.ebarber.gr/photo/uploads/FXiQJHanOzqq1buB0hOyuiFdmQV7kqUngE6hhAsa.jpg  (1080x1080; full frame)

@@ -1,0 +1,4 @@
+dist/
+node_modules/
+src/img/.tmp/
+tests/reports/

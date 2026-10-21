@@ -1,0 +1,50 @@
+# Optional: GitHub Actions deployment. To use it, copy this file to .github/workflows/pages.yml and push
+# with a token that has the `workflow` scope (gh auth refresh -s workflow). The preview is currently
+# published from the gh-pages branch by tools/publish-preview.sh instead.
+name: Deploy preview to GitHub Pages
+
+# Staging preview only: builds with SITE_STAGING=1, so every page carries noindex
+# and robots.txt disallows crawling. Production goes to the real domain per docs/DEPLOYMENT.md.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build (staging, under the repository sub-path)
+        env:
+          SITE_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          SITE_STAGING: "1"
+        run: |
+          node build.mjs
+          node tests/check.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

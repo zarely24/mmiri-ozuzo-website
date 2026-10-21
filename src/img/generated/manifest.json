@@ -1,0 +1,154 @@
+{
+  "band-mobile": {
+    "width": 1080,
+    "height": 1350,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "band-mobile.jpg"
+  },
+  "band": {
+    "width": 1080,
+    "height": 608,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "band.jpg"
+  },
+  "gallery-01": {
+    "width": 1200,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "gallery-01.jpg"
+  },
+  "gallery-03": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "gallery-03.jpg"
+  },
+  "gallery-04": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "gallery-04.jpg"
+  },
+  "gallery-05": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "gallery-05.jpg"
+  },
+  "gallery-06": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1080
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "gallery-06.jpg"
+  },
+  "hero-mobile": {
+    "width": 1242,
+    "height": 1552,
+    "widths": [
+      480,
+      800,
+      1200,
+      1242
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "hero-mobile.jpg"
+  },
+  "hero": {
+    "width": 1388,
+    "height": 836,
+    "widths": [
+      480,
+      800,
+      1200,
+      1388
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "hero.jpg"
+  },
+  "story": {
+    "width": 1107,
+    "height": 1107,
+    "widths": [
+      480,
+      800,
+      1107
+    ],
+    "formats": [
+      "jpg",
+      "webp",
+      "avif"
+    ],
+    "source": "story.jpg"
+  }
+}
