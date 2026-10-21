@@ -6,5 +6,3 @@
 - `hosting/netlify.toml`: Netlify build settings.
 
 All four apply the same security headers and serve `/404.html` with a real 404 status.
-- `hosting/github-pages-workflow.yml`: optional Actions workflow for GitHub Pages (needs a token with the `workflow` scope).
-- `tools/publish-preview.sh`: builds the staging preview and pushes it to the `gh-pages` branch (what the showcase link uses).

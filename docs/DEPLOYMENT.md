@@ -2,6 +2,23 @@
 
 The site is static: `dist/` is the whole deliverable. Any host that serves files over HTTPS works. Nothing is deployed yet; follow this list when the owner gives the go-ahead.
 
+## 0. Showcase preview (already live)
+
+A **staging preview** is published from the `gh-pages` branch of https://github.com/zarely24/mmiri-ozuzo-website to
+**https://zarely24.github.io/mmiri-ozuzo-website/** (English: `/en/`). It is built with `SITE_STAGING=1`, so every page carries
+`noindex, nofollow` and `robots.txt` disallows crawling; canonicals and hreflang point at the preview URL itself. GitHub Pages
+cannot send custom headers, so the CSP and security headers are not active there; that is expected for a preview.
+
+Update it after any change:
+
+```bash
+bash tools/publish-preview.sh
+```
+
+Note that the repository is public (GitHub Pages on a free account requires it), so the staging photographs are publicly
+reachable there; take the preview down (`gh api -X DELETE repos/zarely24/mmiri-ozuzo-website/pages`) once the owner has seen it
+if the photo rights are not yet confirmed.
+
 ## 1. Before building for production
 
 1. Register/confirm the domain and set `baseUrl` in `site.config.json` (`https://www.example.gr`, no trailing slash).
