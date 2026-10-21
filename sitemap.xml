@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/"/>
+  </url>
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/aporrito/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/aporrito/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/aporrito/"/>
+  </url>
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/oroi/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/oroi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/oroi/"/>
+  </url>
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/en/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/"/>
+  </url>
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/en/privacy/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/aporrito/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/aporrito/"/>
+  </url>
+  <url>
+    <loc>https://zarely24.github.io/mmiri-ozuzo-website/en/terms/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="el" href="https://zarely24.github.io/mmiri-ozuzo-website/oroi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zarely24.github.io/mmiri-ozuzo-website/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zarely24.github.io/mmiri-ozuzo-website/oroi/"/>
+  </url>
+</urlset>
