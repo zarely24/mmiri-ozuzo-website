@@ -123,7 +123,7 @@ function resolveImage(ref, lang, sizes) {
 /* ---------- assets ---------- */
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
-const fontsCss = read(path.join(SRC, 'fonts', 'fonts.css')).replace(/url\("([^"]+)"\)/g, 'url("/assets/fonts/$1")');
+const fontsCss = read(path.join(SRC, 'fonts', 'fonts.css')).replace(/url\("([^"]+)"\)/g, `url("${BASE}/assets/fonts/$1")`);
 const css = fontsCss + '\n' + read(path.join(SRC, 'styles.css'));
 const js = read(path.join(SRC, 'main.js'));
 // Conservative minifiers: strip comments, collapse whitespace, trim around structural characters.
@@ -134,6 +134,7 @@ function minifyJs(s) {
   return s.replace(/\/\*[\s\S]*?\*\//g, '').split('\n').map(l => l.replace(/^\s+/, '')).filter(l => l && !l.startsWith('//')).join('\n');
 }
 const cssMin = minifyCss(css), jsMin = minifyJs(js);
+if (BASE && cssMin.includes('url("/assets/')) fail('styles.css contains a root-absolute url() that ignores the base path');
 const assets = { css: `${BASE}/assets/styles.css?v=${hash(cssMin)}`, js: `${BASE}/assets/main.js?v=${hash(jsMin)}` };
 write('assets/styles.css', cssMin); write('assets/main.js', jsMin);
 for (const f of fs.readdirSync(path.join(SRC, 'fonts'))) if (/\.(woff2|txt)$/.test(f)) copy(path.join(SRC, 'fonts', f), `assets/fonts/${f}`);
