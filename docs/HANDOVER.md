@@ -1,6 +1,6 @@
 # Handover — Mmiri Ozuzo website (redesign, 2026-10-21, palette v3 + razor reveal)
 
-Status: **redesigned, built and tested locally, not deployed.** Deployment waits for the owner's go-ahead and the blockers in `docs/LAUNCH-CHECKLIST.md`, the first of which is now written confirmation for the photographs.
+Status: **redesigned, built and tested locally; a noindex staging preview is published at https://zarely24.github.io/mmiri-ozuzo-website/ (repository https://github.com/zarely24/mmiri-ozuzo-website, branch `gh-pages`, updated with `bash tools/publish-preview.sh`).** Production deployment waits for the owner's go-ahead and the blockers in `docs/LAUNCH-CHECKLIST.md`, the first of which is written confirmation for the photographs. The preview is public; every page carries `noindex, nofollow` and robots.txt disallows crawling.
 
 ## 1. What changed in the redesign
 
